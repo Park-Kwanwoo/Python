@@ -30,22 +30,17 @@ for i in range(6):
 print('-------------------')
 j = 1
 for i in range(5, 0, -1):
-    print(' ' * (i-1), '*' * (j))
-    j+=1
+    print(' ' * (i - 1), '*' * j)
+    j += 1
 
 print('-------------------')
 j = 0
 for i in range(5, 0, -1):
-    print(' ' * (j), '*' * (i))
+    print(' ' * j, '*' * i)
     j += 1
 
 print('-------------------')
 j = 1
 for i in range(5, 0, -1):
     print(" " * i, "*" * j)
-    j = j+2
-
-
-
-
-
+    j = j + 2
