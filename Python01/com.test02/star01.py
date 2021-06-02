@@ -3,8 +3,12 @@
 **
 ***
 ****
+*****
+*****
 ****
-
+***
+**
+*
     *
    **
   ***
@@ -26,21 +30,19 @@
 
 for i in range(6):
     print('*' * i)
+print('-------------------')
+
+for i in range(5):
+    print('*' * (5-i))
+print('-------------------')
+
+for i in range(5):
+    print(' ' * (4-i), '*' * (i+1))
 
 print('-------------------')
-j = 1
-for i in range(5, 0, -1):
-    print(' ' * (i - 1), '*' * j)
-    j += 1
+for i in range(5):
+    print(' ' * i, '*' * (5-i))
 
 print('-------------------')
-j = 0
-for i in range(5, 0, -1):
-    print(' ' * j, '*' * i)
-    j += 1
-
-print('-------------------')
-j = 1
-for i in range(5, 0, -1):
-    print(" " * i, "*" * j)
-    j = j + 2
+for i in range(5):
+    print(" " * (4-i), "*" * (2*i + 1))
