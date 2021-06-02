@@ -18,6 +18,5 @@ for j in range(0, 7):
         title = webtoon.find('a').text
         star = webtoon.find('strong').text
         print('{} [{}]'.format(title, star))
-        r
 
 
