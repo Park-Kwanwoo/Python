@@ -11,4 +11,4 @@ movies = soup.find_all('dl', class_='lst_dsc')
 for movie in movies:
     title = movie.find('a').text
     star = movie.find('span', class_='num').text
-    print(title, ' [', star , ']')
+    print(title, ' [', star, ']')

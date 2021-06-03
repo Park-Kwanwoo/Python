@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 from bs4 import BeautifulSoup
 import urllib.request
 import re
@@ -15,7 +17,7 @@ for j in range(0, 7):
         i = i + 1
         if i <= 3:
             continue
-        title = webtoon.find('a').text
+        title = webtoon.find('a')['title']
         star = webtoon.find('strong').text
         print('{} [{}]'.format(title, star))
 
