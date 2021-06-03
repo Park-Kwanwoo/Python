@@ -23,4 +23,11 @@ for webtoon in webtoons:
     tmp['star'] = star
     lst.append(tmp)
 
-print(lst)
+# print(lst)
+res = {}
+res['webtoons'] = lst
+
+res_json = json.dumps(res, ensure_ascii=False)
+
+with open('webtoons.json', 'w', encoding='UTF-8') as f:
+    f.write(res_json)
