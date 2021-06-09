@@ -13,8 +13,10 @@ collection = db.score
 # res02 = collection.delete_many({'test': {'$exists': True}})
 # print(res02.deleted_count)
 
+# 모든 document들을 삭제
+# collection.delete_many({})
+
 for doc in collection.find():
     print(doc)
-
 
 
