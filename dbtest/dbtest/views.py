@@ -54,7 +54,7 @@ def insert_res(request):
                                     mycontent=mycontent,
                                     mydate=timezone.now())
 
-    if result[0] == 1:
+    if result:
         return redirect('index')
     else:
         return redirect('insertform')
